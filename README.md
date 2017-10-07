@@ -1,2 +1,10 @@
 # tooorangey.MediaListPicker
 A prototype to show how you might have an alternative List View in an Umbraco Media Picker
+
+Essentially the default MediaPicker in Umbraco is great, as you would expect it displays images for the items you want to pick. However if the content of your site is quite unusual (eg lots of pictures of the inside of car engines, rather than say pictures of people you know) then it ironically is quite difficult to pick 'the right image' from a group of similar looking images - and although you can see the underlying filename of the image by hovering over it, the images aren't in alphabetical order by filename (they are arranged to fit nicely instead) it can be a fun game to track down your image. 
+
+For long image names, the rest of the name is cut off, so if all the images begin "inside of carboretto fiat punto 1.jpg and "inside of carboretto fiat punto 2.jpg" - it's the last bit of the name that has the important bit of info! - You can filter by typing the name of the image you are after, however this slows down the task of media picking, and relies on your knowing the filename, rather than seeing it and picking it.
+
+So the idea with this enhancement to the picker, is to just give you a toggle button to switch between the default image view and a list view (with the names in alphabetical order) so when you need to think of images in this way, you can locate the image file quickly.
+
+I have this on a couple of clients site's who needed this option, but if you look at the implementation it's really hacked on top of the Core Media Picker - maintaining this as a seperate package would be a nightmare, so I'm really putting this out to see if it's something people might trial and feedback whether having a list view for the core Media Picker is something worth having?, and then the better approach for polishing this up, would be to discuss with core team, and work on a pull request, as what I have here, probably isn't the 'best' approach for making this work, but it is an illustration of how it could feel... 
