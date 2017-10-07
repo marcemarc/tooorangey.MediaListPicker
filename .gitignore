@@ -1,0 +1,10 @@
+Solution/.vs/
+Solution/MediaPickerListView/App_Data/cache/
+Solution/MediaPickerListView/App_Data/umbraco.config
+Solution/MediaPickerListView/App_Data/Logs/
+Solution/MediaPickerListView/App_Data/Models/
+Solution/MediaPickerListView/App_Data/NuGetBackup/
+Solution/MediaPickerListView/App_Data/TEMP/
+Solution/MediaPickerListView/bin/
+Solution/MediaPickerListView/obj/Debug/
+Solution/packages/

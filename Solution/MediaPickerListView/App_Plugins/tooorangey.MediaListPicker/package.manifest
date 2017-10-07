@@ -1,0 +1,47 @@
+﻿{
+  "$schema": "/App_Plugins/manifestSchema.json",
+  "propertyEditors": [
+    {
+      "alias": "tooorangey.MediaListPicker",
+      "name": "Media List Picker",
+      "editor": {
+        "view": "~/App_Plugins/tooorangey.MediaListPicker/medialistpicker.html",
+        "valueType": "STRING"
+      },
+		  "isParameterEditor":true,
+		  "prevalues": {
+        "fields": [
+          {
+            "label": "Pick multiple items",
+            "description": "Whether to allow more that one item to be picked",
+            "key": "multiPicker",
+            "view": "boolean"
+        },
+    {
+            "label": "Pick only images",
+            "description": "Whether to only allow images to be picked",
+            "key": "onlyImages",
+            "view": "boolean"
+        },   {
+            "label": "Disable folder select",
+            "description": "Prevent folders from being selected",
+            "key": "disableFolderSelect",
+            "view": "boolean"
+        },{
+            "label": "Start node",
+            "description": "Pick the folder from which to restrict media picking",
+            "key": "startNodeId",
+            "view": "mediapicker"
+        }
+    ]
+}
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/tooorangey.medialistpicker/medialistpicker.controller.js",
+    "~/App_Plugins/tooorangey.medialistpicker/tooomedialist.directive.js"
+  ],
+  "css": [
+    "~/App_Plugins/tooorangey.medialistpicker/medialistpicker.css"
+  ]
+}
